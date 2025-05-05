@@ -29,7 +29,7 @@ public class PageFinder {
      * @param sortedLemmas Список упорядоченных лемм.
      * @return Список страниц, каждая из которых содержит все указанные леммы.
      */
-    @Transactional
+    @Transactional(readOnly = true)
     public List<PageEntity> findPagesContainingAllLemmas(List<LemmaEntity> sortedLemmas) {
 
         Map<Long, List<PageEntity>> pageEntitiesMap = findPagesByLemmas(sortedLemmas);

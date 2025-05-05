@@ -15,7 +15,6 @@ import com.skillbox.searchengine.utils.MessageLogs;
 import com.skillbox.searchengine.utils.UrlHelper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -34,7 +33,6 @@ import java.util.concurrent.ForkJoinPool;
  */
 @RequiredArgsConstructor
 @Slf4j
-@Component
 public class WebsiteIndexer implements Runnable {
 
     private final SiteRepository siteRepository;

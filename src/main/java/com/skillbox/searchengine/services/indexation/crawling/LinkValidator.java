@@ -1,12 +1,10 @@
 package com.skillbox.searchengine.services.indexation.crawling;
 
-import org.springframework.stereotype.Component;
-
 /**
  * Валидатор ссылок, позволяющий проверить корректность URL и установить,
  * является ли ссылка изображением или документом.
  */
-@Component
+
 public class LinkValidator {
 
     /**
